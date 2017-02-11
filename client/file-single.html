@@ -1,0 +1,15 @@
+<template name="tfileSingle">
+
+<h1>{{notebook.text}}</h1>
+
+{{#if isfolder}}
+	{{> tfolder}}
+{{else}}
+	
+	{{#if isfile}}
+		{{> tfile}}
+	{{/if}}
+
+{{/if}}
+
+</template>

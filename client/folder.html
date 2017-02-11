@@ -1,0 +1,13 @@
+<template name="tfolder">
+    <div class="tfolder">
+        <h3>folder template</h3>
+        <ul class="folderChildren-list">
+            {{#each folderChildren}}
+            <li>
+                {{text}}
+            </li>
+            {{else}}
+            <h2>No Child</h2> {{/each}}
+        </ul>
+    </div>
+</template>
